@@ -5,6 +5,17 @@ using Microsoft.Extensions.Logging;
 
 namespace _011_Props_Converting
 {
+    #region Entities
+
+    public class Course
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string[] Tags { get; set; }
+    }
+
+    #endregion
+
     public class ApplicationContext : DbContext
     {
         public DbSet<Course> Courses { get; set; }

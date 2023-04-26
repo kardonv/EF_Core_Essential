@@ -3,6 +3,17 @@ using Microsoft.Extensions.Logging;
 
 namespace _009_DB_Initialization
 {
+    #region Entities
+
+    public class User
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public int Age { get; set; }
+    }
+
+    #endregion
+
     public class ApplicationContext : DbContext
     {
         //public DbSet<Employee> Employees { get; set; }

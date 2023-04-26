@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace _007_Shadow_Properties
+﻿namespace _007_Shadow_Properties
 {
     internal class Program
     {
@@ -48,15 +46,5 @@ namespace _007_Shadow_Properties
             // Delay.
             Console.ReadLine();
         }
-    }
-
-    public class User
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-
-        //public DateTimeOffset CreatedAt { get; set; }
-        //public DateTimeOffset UpdatedAt { get; set; }
     }
 }

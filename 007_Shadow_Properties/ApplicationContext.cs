@@ -3,6 +3,19 @@ using Microsoft.Extensions.Logging;
 
 namespace _007_Shadow_Properties
 {
+    #region Entities
+    public class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+
+        //public DateTimeOffset CreatedAt { get; set; }
+        //public DateTimeOffset UpdatedAt { get; set; }
+    }
+
+    #endregion
+
     public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }

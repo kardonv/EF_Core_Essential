@@ -3,6 +3,21 @@ using Microsoft.Extensions.Logging;
 
 namespace _005_Keys
 {
+    #region Entities
+    public class User
+    {
+        public int Id { get; set; }
+        //public int UserId { get; set; }
+        //[Key]
+        // public int Identifier { get; set; }
+        public string Name { get; set; }
+        public string PassportNumber { get; set; }
+        public string INN { get; set; }
+        public int Age { get; set; }
+    }
+
+    #endregion
+
     public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }

@@ -3,6 +3,42 @@ using Microsoft.Extensions.Logging;
 
 namespace _003_Fluent_Api
 {
+    #region Entities
+
+    public enum Position
+    {
+        Director,
+        Manager,
+        Developer,
+        TaxAccountant,
+        Other
+    }
+
+    public class Employee
+    {
+        public int Id { get; set; }
+        //public int EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string? MiddleName { get; set; }
+        public string Title { get; set; }
+        public bool IsActive { get; set; }
+        public Position Position { get; set; }
+        public DateTime BirthDate { get; set; }
+        public Address Address { get; set; }        // Навігаційна властивість
+    }
+
+    public class Address
+    {
+        public int Id { get; set; }
+        public string AddressLine1 { get; set; }
+        public string? AddressLine2 { get; set; }
+        public string State { get; set; }
+        public string Sity { get; set; }
+        public string ZipCode { get; set; }
+    }
+
+    #endregion
     public class ApplicationContext : DbContext
     {
         /**

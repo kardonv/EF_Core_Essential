@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace _006_Indexes
+﻿namespace _006_Indexes
 {
     internal class Program
     {
@@ -19,15 +17,5 @@ namespace _006_Indexes
             // Delay.
             Console.ReadLine();
         }
-    }
-
-    [Index("PassportNumber", IsUnique = true, Name = "UK_Users_Passport_Number")]
-    public class User
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string PassportNumber { get; set; }
-        public string INN { get; set; }
-        public int Age { get; set; }
     }
 }
