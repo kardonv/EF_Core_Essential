@@ -63,7 +63,7 @@ namespace _003_Eager_Loading
                     Console.WriteLine($"Employee {employee.Name} works in {employee.Company?.Name} - {employee.Company?.Country?.Name};");
                 }
 
-                Console.WriteLine($"Employee company name: ->{employees[0].Company?.Name}<-");
+                //Console.WriteLine($"Employee company name: ->{employees[0].Company?.Name}<-");
             }
 
             Console.WriteLine(new string('-', 80));

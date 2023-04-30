@@ -20,7 +20,6 @@ namespace _003_Eager_Loading
         public int CountryId { get; set; }
         public Country? Country { get; set; }
 
-
         public List<Employee> Employees { get; set; }    // Навігаційна власивість
     }
 

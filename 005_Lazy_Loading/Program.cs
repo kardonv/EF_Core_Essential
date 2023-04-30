@@ -46,6 +46,7 @@ namespace _005_Lazy_Loading
 
                 foreach (var employee in employees)
                 {
+                    // N + 1 запитів
                     Console.WriteLine($"Employee {employee.Name} works in {employee.Company?.Name} - {employee.Company?.Country?.Name};");
                 }
 
